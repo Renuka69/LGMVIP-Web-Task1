@@ -1,0 +1,359 @@
+/* Stylings for mobile devices - 360px */
+
+body {
+    position: relative;
+} 
+
+.navbar-brand {
+    font-weight: bold;
+}
+
+.navbar-brand>i {
+    transform: rotateZ(-60deg);
+}
+
+.navbar-toggler {
+    box-shadow: none !important;
+    border: none;
+}
+
+.homeCarouselToggler {
+    width: 10px !important;
+    height: 10px !important;
+    border-radius: 50%;
+    border: 1px solid black !important;
+}
+
+.homeCarouselCaption {
+    background-color: rgba(0,0,0,0.4);
+    margin-bottom: 2rem;
+}
+
+.book-img-container {
+    width: 97%;
+    border-radius: 0.3rem;
+    overflow: hidden;
+}
+
+.book-img {
+    border-radius: 0.3rem;
+    transition: 0.3s;
+}
+
+.book-img-container:hover>.book-img {
+    transform: scale(1.1);
+}
+
+.bookInput {
+    box-shadow: none !important;
+    border: none;
+}
+
+#bookPassengers::-webkit-inner-spin-button, #bookPassengers::-webkit-outer-spin-button, #contactNumber::-webkit-inner-spin-button, #contactNumber::-webkit-outer-spin-button {
+    display: none;
+}
+
+#bookArrDate, #bookRetdate {
+    color: black;
+}
+
+.bookBtn:hover {
+    background-color: transparent;
+    color: #ffc107;
+}
+
+.bookBtn:focus {
+    box-shadow: none !important;
+}
+
+.packagesTitle>span {
+    background-color: rgba(255, 193, 07, 0.7);
+    padding: 0 0.5rem;
+    font-weight: bolder;
+    border-radius: 0.3rem;
+}
+
+.packageCard {
+    width: 90%;
+}
+
+.packageCard:hover {
+    box-shadow: 0px 0px 15px rgba(0,0,0,0.5);
+}
+
+.packageCardBody {
+    background-color: #dfd6ef;
+}
+
+#packageCardText1>span, #packageCardText2>span, #packageCardText3>span, #packageCardText4>span, #packageCardText5>span, #packageCardText6>span {
+    font-size: 13px;
+    text-decoration: line-through;
+}
+
+.service {
+    width: 90%;
+    border: 1px solid grey;
+    border-radius: 0.4rem;
+    padding: 1rem 0.5rem;
+}
+
+.service-icon {
+    font-size: 35px;
+}
+
+.gallery-title>span {
+    padding: 0 0.5rem;
+    font-weight: bolder;
+    border-radius: 0.3rem;
+    background-color: rgba(255, 193, 07, 0.7);
+}
+
+.gallery-item {
+    position: relative;
+    width: 90%;
+    border-radius: 0.4rem;
+    overflow: hidden;
+}
+
+.gallery-img {
+    border-radius: 0.4rem;
+}
+
+.gallery-invisible {
+    position: absolute;
+    border-radius: 0.4rem;
+    top: 0;
+    left: -100%;
+    background-color: rgba(0,0,0,0.5);
+    transition: 0.5s;
+}
+
+.gallery-item:hover .gallery-invisible {
+    left: 0;
+}
+
+.review {
+    width: 90%;
+    background-color: #dfd6ef;
+    border-radius: 0.4rem;
+}
+
+.review-img {
+    border-radius: 50%;
+}
+
+.owl-dots {
+    margin-top: 0.5rem;
+    text-align: center;
+}
+
+.owl-dot {
+    border: 1px solid #ffc107 !important;
+    background-color: #ffc107 !important;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    margin: 0.3rem;
+    transition: 0.3s;
+}
+
+.owl-dot.active {
+    background-color: transparent !important;
+    width: 24px;
+    border-radius: 1.5rem;
+}
+
+.contact-title>span {
+    background-color: rgba(255, 193, 07, 0.7);
+    padding: 0 0.5rem;
+    font-weight: bolder;
+    border-radius: 0.3rem;
+}
+
+.contact-img-container {
+    border-radius: 0.4rem;
+    width: 97%;
+    overflow: hidden;
+}
+
+.contact-img {
+    border-radius: 0.4rem;
+    transition: 0.3s;
+}
+
+.contact-img-container:hover .contact-img {
+    transform: scale(1.1);
+}
+
+.contactInput {
+    box-shadow: none !important;
+    border: 1px solid grey;
+}
+
+.contactInput:focus {
+    border: 1px solid black;
+}
+
+#contactMsg {
+    resize: none;
+}
+
+.footer-content-text {
+    color: grey !important;
+}
+
+.social-media {
+    text-decoration: none;
+    padding: 0.5rem 0.8rem;
+    border-radius: 0.3rem;
+    transition: 0.3s;
+    color: grey !important;
+}
+
+.social-media:hover {
+    color: #ffc107 !important;
+}
+
+.footer-content-1 {
+    width: 95%;
+}
+
+.footer-content-2 {
+    width: 48%;
+}
+
+.footer-content-3 {
+    width: 48%;
+}
+
+.copyright {
+    border-top: 1px solid grey;
+}
+
+.scrollToTopBtn {
+    z-index: 99;
+    position: fixed;
+    bottom: 10%;
+    right: 2%;
+    padding: 0.2rem 0.35rem;
+    border-radius: 0.15rem;
+    visibility: hidden;
+}
+
+/* Stylings for mobile devices ends */
+
+/* Media queries starts */
+
+/* Stylings for 576px */
+@media (min-width: 576px) {
+    .homeCarouselCaption {
+        width: 45%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 6rem;
+    }
+
+    .owl-dot {
+        width: 25px;
+        border-radius: 1.6rem;
+    }
+
+    .scrollToTopBtn {
+        right: 1%;
+    }
+}
+
+/* Stylings for 768px */
+@media (min-width: 768px) {
+    .homeCarouselCaption {
+        width: 35%;
+        margin-bottom: 10rem;
+    }
+
+    .packageCard {
+        width: 45%;
+    }
+
+    .service {
+        width: 45%;
+    }
+
+    .gallery-item {
+        width: 30%;
+    }
+
+    .footer-contents-holder {
+        align-items: flex-start;
+    }
+
+    .footer-content-1, .footer-content-2, .footer-content-3 {
+        width: 30%;
+        margin: 0 auto;
+    }
+}
+
+/* Stylings for 992px */
+@media (min-width: 992px) {
+    .myNav-link {
+        font-weight: 600;
+    }
+
+    .myNav-link:hover {
+        color: white;
+    }
+
+    .home {
+        height: 90vh !important;
+    }
+
+    .homeCarousel, .carousel-inner, .carousel-item, .home-img {
+        height: 100% !important;
+    }
+
+    .homeCarouselCaption {
+        width: 30%;
+    }
+
+    .book-img-container {
+        width: 50%;
+    }
+
+    .book-content-container {
+        width: 50%;
+    }
+
+    .packageCard {
+        width: 27%;
+    }
+
+    .contact-img-container {
+        width: 50%;
+    }
+
+    .contact-content-container {
+        width: 50%;
+    }
+}
+
+/* Stylings for 1200px */
+@media (min-width: 1200px) {
+    .homeCarouselCaption {
+        width: 23%;
+    }
+
+    .booking-container {
+        padding-left: 2.5rem;
+        padding-right: 2.5rem;
+    }
+
+    .service {
+        width: 30%;
+    }
+
+    .contact-container {
+        padding-left: 2.5rem;
+        padding-right: 2.5rem;
+    }
+}
+
+/* Media queries ends */

@@ -1,0 +1,729 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- Owl Carousel CSS -->
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <!-- Font Awesome CDN -->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <title>TRAVELEXP</title>
+    <link rel="shortcut icon" href="Images/favicon.png" type="image/x-icon">
+</head>
+
+<body>
+    <!-- Navbar starts -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+        <div class="container-fluid">
+            <a class="navbar-brand"><i class="fal fa-plane text-warning"></i>TRAVEL<span
+                    class="text-warning">EXP</span></a>
+            <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#myNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="myNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item myNav-item">
+                        <a href="#" class="nav-link myNav-link">HOME</a>
+                    </li>
+                    <li class="nav-item myNav-item">
+                        <a href="#book" class="nav-link scroll-link myNav-link">BOOK</a>
+                    </li>
+                    <li class="nav-item myNav-item">
+                        <a href="#packages" class="nav-link myNav-link">PACKAGES</a>
+                    </li>
+                    <li class="nav-item myNav-item">
+                        <a href="#services" class="nav-link myNav-link">SERVICES</a>
+                    </li>
+                    <li class="nav-item myNav-item">
+                        <a href="#gallery" class="nav-link myNav-link">GALLERY</a>
+                    </li>
+                    <li class="nav-item myNav-item">
+                        <a href="#reviews" class="nav-link myNav-link">REVIEWS</a>
+                    </li>
+                    <li class="nav-item myNav-item">
+                        <a href="#contact" class="nav-link myNav-link">CONTACT</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- Navbar ends -->
+
+    <!-- Home section starts -->
+    <section class="home bg-dark" id="home">
+        <div id="homeCarousel" class="carousel slide carousel-fade homeCarousel" data-bs-ride="carousel">
+            <div class="carousel-indicators homeCarouselToggle">
+                <button type="button" data-bs-target="#homeCarousel" data-bs-slide-to="0"
+                    class="active homeCarouselToggler"></button>
+                <button type="button" data-bs-target="#homeCarousel" data-bs-slide-to="1"
+                    class="homeCarouselToggler"></button>
+                <button type="button" data-bs-target="#homeCarousel" data-bs-slide-to="2"
+                    class="homeCarouselToggler"></button>
+                <button type="button" data-bs-target="#homeCarousel" data-bs-slide-to="3"
+                    class="homeCarouselToggler"></button>
+            </div>
+            <div class="carousel-inner">
+                <!-- Home Carousel Item 1 -->
+                <div class="carousel-item active">
+                    <img src="Images/home1.jpg" alt="Home Image" class="d-block w-100 home-img">
+                    <div class="carousel-caption d-md-block homeCarouselCaption">
+                        <h5>“Paris is the most beautiful city in the world. It brings tears to your eyes.”</h5>
+                    </div>
+                </div>
+                <!-- Home Carousel Item 2 -->
+                <div class="carousel-item">
+                    <img src="Images/home2.jpg" alt="Home Image" class="d-block w-100 home-img">
+                    <div class="carousel-caption d-md-block homeCarouselCaption">
+                        <h5>“We take photos as a return ticket to a moment otherwise gone.”</h5>
+                    </div>
+                </div>
+                <!-- Home Carousel Item 3 -->
+                <div class="carousel-item">
+                    <img src="Images/home3.jpg" alt="Home Image" class="d-block w-100 home-img">
+                    <div class="carousel-caption d-md-block homeCarouselCaption">
+                        <h5>“Traveling leaves you speechless, then turns you into a storyteller.”</h5>
+                    </div>
+                </div>
+                <!-- Home Carousel Item 4 -->
+                <div class="carousel-item">
+                    <img src="Images/home5.jpg" alt="Home Image" class="d-block w-100 home-img">
+                    <div class="carousel-caption d-md-block homeCarouselCaption">
+                        <h5>“Travel makes one modest. You see what a tiny place you occupy in the world.”</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Home section ends -->
+
+    <!-- Booking section starts -->
+    <section class="bg-dark px-1 py-3 book" id="book">
+        <h2 class="text-center text-white bookTitle">BOOK YOUR <span class="text-warning">CHANCE</span></h2>
+        <h6 class="text-center text-white mb-3 bookSubtitle"><span class="text-warning">Chance</span> to admire the
+            beauty of Nature</h6>
+        <div class="d-flex flex-column gap-2 flex-lg-row align-items-lg-center booking-container">
+            <div class="mx-auto book-img-container">
+                <img src="Images/bookImg.jpg" alt="Book Image" class="d-block w-100 book-img">
+            </div>
+            <div class="px-2 book-content-container">
+                <label for="bookLocation" class="text-warning mb-1 bookLabel">Desired Location</label>
+                <input type="text" id="bookLocation" class="form-control mb-3 bookInput"
+                    placeholder="Enter your favourite location">
+                <label for="bookPassengers" class="text-warning mb-1 bookLabel">Number of Passengers</label>
+                <input type="number" id="bookPassengers" class="form-control mb-3 bookInput"
+                    placeholder="Enter the No. of Passengers">
+                <label for="bookArrDate" class="text-warning mb-1 bookLabel">Date of Arrival</label>
+                <input type="date" id="bookArrDate" class="form-control mb-3 bookInput">
+                <label for="bookRetDate" class="text-warning mb-1 bookLabel">Date of Return</label>
+                <input type="date" id="bookRetDate" class="form-control mb-3 bookInput">
+                <button type="button" class="btn btn-warning form-control bookBtn" data-bs-toggle="modal"
+                    data-bs-target="#bookModal">SUBMIT</button>
+                <!-- Modal starts -->
+                <div class="modal fade" id="bookModal" data-bs-backdrop="static" data-bs-keyboard="false">
+                    <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h6 class="modal-title" id="staticBackdropLabel">Thank you for choosing TRAVELEXP. Your
+                                    seat(s) has been booked successfully!!!</h6>
+                            </div>
+                            <div class="modal-body">
+                                We wish you a Very Happy Journey!
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-warning" data-bs-dismiss="modal">Done</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Modal ends -->
+            </div>
+        </div>
+    </section>
+    <!-- Booking section ends -->
+
+    <!-- Packages sections starts -->
+    <section class="px-1 py-4 packages" id="packages">
+        <h2 class="text-center mb-3 packagesTitle">
+            <span>P</span>
+            <span>A</span>
+            <span>C</span>
+            <span>K</span>
+            <span>A</span>
+            <span>G</span>
+            <span>E</span>
+            <span>S</span>
+        </h2>
+        <div class="d-flex flex-wrap package-container">
+            <!-- Package 1 -->
+            <div class="card mx-auto mb-3 packageCard">
+                <img src="Images/package1.jpg" alt="Package Image" class="card-img-top packageImg">
+                <div class="card-body packageCardBody">
+                    <h5 class="card-title packageCardTitle"><span class="text-warning">
+                            <i class="fas fa-map-marker-alt"></i></span> Paris</h5>
+                    <p class="card-text packageCardText">Paris is the capital and most populous city of France. Paris “the City of Love” because of the romantic atmosphere it exudes. </p>
+                    <p class="card-text packageCardText">
+                        <span class="text-warning"><i class="fas fa-star"></i></span>
+                        <span class="text-warning"><i class="fas fa-star"></i></span>
+                        <span class="text-warning"><i class="fas fa-star"></i></span>
+                        <span class="text-warning"><i class="fas fa-star"></i></span>
+                        <span class="text-secondary"><i class="fas fa-star"></i></span>
+                    </p>
+                    <p class="card-text packageCardText" id="packageCardText1">$149.00 <span>$249.00</span></p>
+                    <a href="#book" class="btn btn-warning packageBtn">Book Seats</a>
+                </div>
+            </div>
+
+            <!-- Package 2 -->
+            <div class="card mx-auto mb-3 packageCard">
+                <img src="Images/package2.jpg" alt="Package Image" class="card-img-top packageImg">
+                <div class="card-body packageCardBody">
+                    <h5 class="card-title packageCardTitle"><span class="text-warning">
+                            <i class="fas fa-map-marker-alt"></i></span> New Zealand</h5>
+                    <p class="card-text packageCardText">New Zealand is an island country in the southwestern Pacific Ocean. The economy of New Zealand is a highly developed free-market economy.
+                        Culpa, magnam.</p>
+                    <p class="card-text packageCardText">
+                        <span class="text-warning"><i class="fas fa-star"></i></span>
+                        <span class="text-warning"><i class="fas fa-star"></i></span>
+                        <span class="text-warning"><i class="fas fa-star"></i></span>
+                        <span class="text-warning"><i class="fas fa-star-half-alt"></i></span>
+                        <span class="text-secondary"><i class="fas fa-star"></i></span>
+                    </p>
+                    <p class="card-text packageCardText" id="packageCardText2">$179.00 <span>$279.00</span></p>
+                    <a href="#book" class="btn btn-warning packageBtn">Book Seats</a>
+                </div>
+            </div>
+
+            <!-- Package 3 -->
+            <div class="card mx-auto mb-3 packageCard">
+                <img src="Images/package3.jpg" alt="Package Image" class="card-img-top packageImg">
+                <div class="card-body packageCardBody">
+                    <h5 class="card-title packageCardTitle"><span class="text-warning">
+                            <i class="fas fa-map-marker-alt"></i></span> Norway</h5>
+                    <p class="card-text packageCardText">Norway is known as the Land of the Midnight Sun. It is famous for its 
+                        phenomenal fjords, lakes and magical skies. Norway is also famous for its languages, Vikings and folklore, being eco-friendly, and oil production.</p>
+                    <p class="card-text packageCardText">
+                        <span class="text-warning"><i class="fas fa-star"></i></span>
+                        <span class="text-warning"><i class="fas fa-star"></i></span>
+                        <span class="text-warning"><i class="fas fa-star-half-alt"></i></span>
+                        <span class="text-secondary"><i class="fas fa-star"></i></span>
+                        <span class="text-secondary"><i class="fas fa-star"></i></span>
+                    </p>
+                    <p class="card-text packageCardText" id="packageCardText3">$159.00 <span>$259.00</span></p>
+                    <a href="#book" class="btn btn-warning packageBtn">Book Seats</a>
+                </div>
+            </div>
+
+            <!-- Package 4 -->
+            <div class="card mx-auto mb-3 packageCard">
+                <img src="Images/package4.jpg" alt="Package Image" class="card-img-top packageImg">
+                <div class="card-body packageCardBody">
+                    <h5 class="card-title packageCardTitle"><span class="text-warning">
+                            <i class="fas fa-map-marker-alt"></i></span> Brazil</h5>
+                    <p class="card-text packageCardText">Brazil is famous for its iconic carnival festival and its talented soccer
+                         players like Pelé and Neymar. Brazil is also known for its tropical beaches, exquisite waterfalls, and the Amazon rainforest.</p>
+                    <p class="card-text packageCardText">
+                        <span class="text-warning"><i class="fas fa-star"></i></span>
+                        <span class="text-warning"><i class="fas fa-star"></i></span>
+                        <span class="text-warning"><i class="fas fa-star"></i></span>
+                        <span class="text-secondary"><i class="fas fa-star"></i></span>
+                        <span class="text-secondary"><i class="fas fa-star"></i></span>
+                    </p>
+                    <p class="card-text packageCardText" id="packageCardText4">$189.00 <span>$289.00</span></p>
+                    <a href="#book" class="btn btn-warning packageBtn">Book Seats</a>
+                </div>
+            </div>
+
+            <!-- Package 5 -->
+            <div class="card mx-auto mb-3 packageCard">
+                <img src="Images/package5.jpg" alt="Package Image" class="card-img-top packageImg">
+                <div class="card-body packageCardBody">
+                    <h5 class="card-title packageCardTitle"><span class="text-warning">
+                            <i class="fas fa-map-marker-alt"></i></span> Sydney</h5>
+                    <p class="card-text packageCardText">Sydney is a vibrant city known for its yacht-studded harbour, superb beaches 
+                        and the iconic Opera House with its towering sail structure. </p>
+                    <p class="card-text packageCardText">
+                        <span class="text-warning"><i class="fas fa-star"></i></span>
+                        <span class="text-warning"><i class="fas fa-star"></i></span>
+                        <span class="text-warning"><i class="fas fa-star"></i></span>
+                        <span class="text-warning"><i class="fas fa-star-half-alt"></i></span>
+                        <span class="text-secondary"><i class="fas fa-star"></i></span>
+                    </p>
+                    <p class="card-text packageCardText" id="packageCardText5">$179.00 <span>$279.00</span></p>
+                    <a href="#book" class="btn btn-warning packageBtn">Book Seats</a>
+                </div>
+            </div>
+
+            <!-- Package 6 -->
+            <div class="card mx-auto mb-3 packageCard">
+                <img src="Images/package6.jpg" alt="Package Image" class="card-img-top packageImg">
+                <div class="card-body packageCardBody">
+                    <h5 class="card-title packageCardTitle"><span class="text-warning">
+                            <i class="fas fa-map-marker-alt"></i></span> Tokyo</h5>
+                    <p class="card-text packageCardText">Tokyo (東京, Tōkyō) is Japan's capital and the world's most populous metropolis.
+                        Today, Tokyo offers a seemingly unlimited choice of shopping, entertainment, culture and dining to its visitors. The city's history can be appreciated in districts such as Asakusa and in many excellent museums, historic temples and gardens.</p>
+                    <p class="card-text packageCardText">
+                        <span class="text-warning"><i class="fas fa-star"></i></span>
+                        <span class="text-warning"><i class="fas fa-star"></i></span>
+                        <span class="text-warning"><i class="fas fa-star"></i></span>
+                        <span class="text-warning"><i class="fas fa-star"></i></span>
+                        <span class="text-secondary"><i class="fas fa-star"></i></span>
+                    </p>
+                    <p class="card-text packageCardText" id="packageCardText6">$199.00 <span>$299.00</span></p>
+                    <a href="#book" class="btn btn-warning packageBtn">Book Seats</a>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <!-- Packages section ends -->
+
+    <!-- Services section starts -->
+    <section class="bg-dark px-1 py-4 services" id="services">
+        <h2 class="text-center text-warning mb-3 services-title">SERVICES</h2>
+        <div class="d-flex flex-wrap">
+            <!-- Service 1 -->
+            <div class="d-flex flex-column justify-content-center align-items-center mx-auto mb-3 service"
+                id="service1">
+                <p class="text-warning service-icon"><i class="fas fa-hotel"></i></p>
+                <h4 class="text-white text-center service-title">Affordable Five Star Accomodation</h4>
+                <p class="text-white text-center">There's nothing quite like spending the night at a five-star hotel — the sheets are a little softer, the decor a bit more grand, and the service more refined. But high-end accommodations don't come cheap,
+                     and most five-star hotels charge hundreds or thousands of dollars for a single night.</p>
+            </div>
+
+            <!-- Service 2 -->
+            <div class="d-flex flex-column justify-content-center align-items-center mx-auto mb-3 service"
+                id="service2">
+                <p class="text-warning service-icon"><i class="fas fa-burger-soda"></i></p>
+                <h4 class="text-white text-center service-title">Free Foods and Drinks</h4>
+                <p class="text-white text-center">Food is for eating, and good food is to be enjoyed… I think food is, actually, very beautiful in itself. Free food is difficult to get and easier to digest.</p>
+            </div>
+
+            <!-- Service 3 -->
+            <div class="d-flex flex-column justify-content-center align-items-center mx-auto mb-3 service"
+                id="service3">
+                <p class="text-warning service-icon"><i class="fas fa-route"></i></p>
+                <h4 class="text-white text-center service-title">Appropriate Guidance</h4>
+                <p class="text-white text-center">It provides information about the market requirements and about educational opportunities in a more organized and systematic way. Guidance is very important in once life but the guidance provided should be proper and positive.
+                     Proper guidance is a blueprint for the bright career.</p>
+            </div>
+
+            <!-- Service 4 -->
+            <div class="d-flex flex-column justify-content-center align-items-center mx-auto mb-3 service"
+                id="service4">
+                <p class="text-warning service-icon"><i class="fas fa-globe-europe"></i></p>
+                <h4 class="text-white text-center service-title">All over the World</h4>
+                <p class="text-white text-center"> The term "world" refers to the totality of entities, to the whole of reality or to everything that is.[1] The nature of the world has been conceptualized differently in different fields. 
+                    Some conceptions see the world as unique while others talk of a "plurality of worlds"</p>
+            </div>
+
+            <!-- Service 5 -->
+            <div class="d-flex flex-column justify-content-center align-items-center mx-auto mb-3 service"
+                id="service5">
+                <p class="text-warning service-icon"><i class="fas fa-plane"></i></p>
+                <h4 class="text-white text-center service-title">Comfortable and Quick Journey</h4>
+                <p class="text-white text-center">A long haul flight can be very frustrating and tiring for any traveler, but if you want to arrive at the other end of the globe in one day, then it’s the best mode of transportation. </p>
+            </div>
+
+            <!-- Service 6 -->
+            <div class="d-flex flex-column justify-content-center align-items-center mx-auto mb-3 service"
+                id="service6">
+                <p class="text-warning service-icon"><i class="fas fa-hiking"></i></p>
+                <h4 class="text-white text-center service-title">Adventures to your vision</h4>
+                <p class="text-white text-center">At Empower Adventures, we are dedicated to providing you with memorable adventure experiences. Visit our site to learn more about our mission and vision.</p>
+            </div>
+
+        </div>
+    </section>
+    <!-- Services section ends -->
+
+    <!-- Gallery section starts -->
+    <section class="px-1 py-4 gallery" id="gallery">
+        <h2 class="text-center mb-3 gallery-title">
+            <span>G</span>
+            <span>A</span>
+            <span>L</span>
+            <span>L</span>
+            <span>E</span>
+            <span>R</span>
+            <span>Y</span>
+        </h2>
+        <div class="d-flex flex-wrap gallery-items-container">
+            <!-- Gallery Item 1 -->
+            <div class="mx-auto mb-3 gallery-item">
+                <img src="Images/gallery1.jpeg" alt="Gallery Image" class="d-block w-100 gallery-img">
+                <div class="d-flex justify-content-center align-items-center w-100 h-100 gallery-invisible">
+                    <h5 class="text-white text-center gallery-invisible-text">Amazing Sculptures</h5>
+                </div>
+            </div>
+
+            <!-- Gallery Item 2 -->
+            <div class="mx-auto mb-3 gallery-item">
+                <img src="Images/gallery2.jpg" alt="Gallery Image" class="d-block w-100 gallery-img">
+                <div class="d-flex justify-content-center align-items-center w-100 h-100 gallery-invisible">
+                    <h5 class="text-white text-center gallery-invisible-text">Beautiful Valleys</h5>
+                </div>
+            </div>
+
+            <!-- Gallery Item 3 -->
+            <div class="mx-auto mb-3 gallery-item">
+                <img src="Images/gallery3.jpg" alt="Gallery Image" class="d-block w-100 gallery-img">
+                <div class="d-flex justify-content-center align-items-center w-100 h-100 gallery-invisible">
+                    <h5 class="text-white text-center gallery-invisible-text">Wonderful Mountains</h5>
+                </div>
+            </div>
+
+            <!-- Gallery Item 4 -->
+            <div class="mx-auto mb-3 gallery-item">
+                <img src="Images/gallery4.jpg" alt="Gallery Image" class="d-block w-100 gallery-img">
+                <div class="d-flex justify-content-center align-items-center w-100 h-100 gallery-invisible">
+                    <h5 class="text-white text-center gallery-invisible-text">Amazing Islands</h5>
+                </div>
+            </div>
+
+            <!-- Gallery Item 5 -->
+            <div class="mx-auto mb-3 gallery-item">
+                <img src="Images/gallery5.jpg" alt="Gallery Image" class="d-block w-100 gallery-img">
+                <div class="d-flex justify-content-center align-items-center w-100 h-100 gallery-invisible">
+                    <h5 class="text-white text-center gallery-invisible-text">Beautiful Beachside Resorts</h5>
+                </div>
+            </div>
+
+            <!-- Gallery Item 6 -->
+            <div class="mx-auto mb-3 gallery-item">
+                <img src="Images/gallery6.jpg" alt="Gallery Image" class="d-block w-100 gallery-img">
+                <div class="d-flex justify-content-center align-items-center w-100 h-100 gallery-invisible">
+                    <h5 class="text-white text-center gallery-invisible-text">Wonderful Seashores</h5>
+                </div>
+            </div>
+
+            <!-- Gallery Item 7 -->
+            <div class="mx-auto mb-3 gallery-item">
+                <img src="Images/gallery7.jpg" alt="Gallery Image" class="d-block w-100 gallery-img">
+                <div class="d-flex justify-content-center align-items-center w-100 h-100 gallery-invisible">
+                    <h5 class="text-white text-center gallery-invisible-text">Amazing Rivers</h5>
+                </div>
+            </div>
+
+            <!-- Gallery Item 8 -->
+            <div class="mx-auto mb-3 gallery-item">
+                <img src="Images/gallery8.jpg" alt="Gallery Image" class="d-block w-100 gallery-img">
+                <div class="d-flex justify-content-center align-items-center w-100 h-100 gallery-invisible">
+                    <h5 class="text-white text-center gallery-invisible-text">Beautiful Waterfalls</h5>
+                </div>
+            </div>
+
+            <!-- Gallery Item 9 -->
+            <div class="mx-auto mb-3 gallery-item">
+                <img src="Images/gallery9.jpg" alt="Gallery Image" class="d-block w-100 gallery-img">
+                <div class="d-flex justify-content-center align-items-center w-100 h-100 gallery-invisible">
+                    <h5 class="text-white text-center gallery-invisible-text">Wonderful Roads and Bends</h5>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <!-- Gallery section ends -->
+
+    <!-- Review section starts -->
+    <section class="bg-dark px-1 py-4 reviews" id="reviews">
+        <h2 class="text-center text-warning mb-3 reviews-title">REVIEWS</h2>
+        <div class="wrapper reviews-container">
+            <div class="carousel owl-carousel reviews-carousel">
+                <!-- Review 1 -->
+                <div class="card d-flex flex-column justify-content-center align-items-center mx-auto py-3 review"
+                    id="review1">
+                    <img src="Images/review1.jpg" alt="Review Image" class="d-block w-25 h-25 mb-2 review-img">
+                    <h5 class="text-center reviewer-name">Richard</h5>
+                    <p class="text-center review-content">
+                        The best trip ever.... wonderfull places and excellents hotel. The Driver Freddy, trustworthy and in good mood
+                    </p>
+                    <p class="text-center reviewer-ratings">
+                        <span class="text-warning"><i class="fas fa-star"></i></span>
+                        <span class="text-warning"><i class="fas fa-star"></i></span>
+                        <span class="text-warning"><i class="fas fa-star"></i></span>
+                        <span class="text-warning"><i class="fas fa-star"></i></span>
+                        <span class="text-secondary"><i class="fas fa-star"></i></span>
+                    </p>
+                </div>
+
+                <!-- Review 2 -->
+                <div class="card d-flex flex-column justify-content-center align-items-center mx-auto py-3 review"
+                    id="review1">
+                    <img src="Images/review2.jpg" alt="Review Image" class="d-block w-25 h-25 mb-2 review-img">
+                    <h5 class="text-center reviewer-name">Robert</h5>
+                    <p class="text-center review-content">
+                        It was perfect good price and the personal was very good with us
+                        good hotel, good facility and service
+                        nice breakfast but the flavor is less varied
+                    </p>
+                    <p class="text-center reviewer-ratings">
+                        <span class="text-warning"><i class="fas fa-star"></i></span>
+                        <span class="text-warning"><i class="fas fa-star"></i></span>
+                        <span class="text-warning"><i class="fas fa-star"></i></span>
+                        <span class="text-warning"><i class="fas fa-star"></i></span>
+                        <span class="text-secondary"><i class="fas fa-star"></i></span>
+                    </p>
+                </div>
+
+                <!-- Review 3 -->
+                <div class="card d-flex flex-column justify-content-center align-items-center mx-auto py-3 review"
+                    id="review1">
+                    <img src="Images/review3.jpg" alt="Review Image" class="d-block w-25 h-25 mb-2 review-img">
+                    <h5 class="text-center reviewer-name">David</h5>
+                    <p class="text-center review-content">
+                        Great guys We just enjoyed the trip. Everything went well. We stayed in amazing places & saw great sites It was an outstanding holiday.... Thanks for everything..
+                    </p>
+                    <p class="text-center reviewer-ratings">
+                        <span class="text-warning"><i class="fas fa-star"></i></span>
+                        <span class="text-warning"><i class="fas fa-star"></i></span>
+                        <span class="text-warning"><i class="fas fa-star"></i></span>
+                        <span class="text-warning"><i class="fas fa-star"></i></span>
+                        <span class="text-secondary"><i class="fas fa-star"></i></span>
+                    </p>
+                </div>
+
+                <!-- Review 4 -->
+                <div class="card d-flex flex-column justify-content-center align-items-center mx-auto py-3 review"
+                    id="review1">
+                    <img src="Images/review4.jpg" alt="Review Image" class="d-block w-25 h-25 mb-2 review-img">
+                    <h5 class="text-center reviewer-name">Stephen</h5>
+                    <p class="text-center review-content">
+                        ✔️ visiting Amber Fort and had a great time here , riding elephent and the view at the top are Amazing !! ❤️ #jaipur #india 2018
+                    </p>
+                    <p class="text-center reviewer-ratings">
+                        <span class="text-warning"><i class="fas fa-star"></i></span>
+                        <span class="text-warning"><i class="fas fa-star"></i></span>
+                        <span class="text-warning"><i class="fas fa-star"></i></span>
+                        <span class="text-warning"><i class="fas fa-star"></i></span>
+                        <span class="text-secondary"><i class="fas fa-star"></i></span>
+                    </p>
+                </div>
+
+                <!-- Review 5 -->
+                <div class="card d-flex flex-column justify-content-center align-items-center mx-auto py-3 review"
+                    id="review1">
+                    <img src="Images/review5.jpg" alt="Review Image" class="d-block w-25 h-25 mb-2 review-img">
+                    <h5 class="text-center reviewer-name">Mercy</h5>
+                    <p class="text-center review-content">
+                        They do their best to make our whole journey in India to be as perfect as possible. Great service! Great planning!
+                    </p>
+                    <p class="text-center reviewer-ratings">
+                        <span class="text-warning"><i class="fas fa-star"></i></span>
+                        <span class="text-warning"><i class="fas fa-star"></i></span>
+                        <span class="text-warning"><i class="fas fa-star"></i></span>
+                        <span class="text-warning"><i class="fas fa-star"></i></span>
+                        <span class="text-secondary"><i class="fas fa-star"></i></span>
+                    </p>
+                </div>
+
+                <!-- Review 6 -->
+                <div class="card d-flex flex-column justify-content-center align-items-center mx-auto py-3 review"
+                    id="review1">
+                    <img src="Images/review6.jpg" alt="Review Image" class="d-block w-25 h-25 mb-2 review-img">
+                    <h5 class="text-center reviewer-name">Jenifer</h5>
+                    <p class="text-center review-content">
+                        Every one is exclant they provaide excant hotel and transport and good trivel also this our first expirence with visit india tour company
+                    </p>
+                    <p class="text-center reviewer-ratings">
+                        <span class="text-warning"><i class="fas fa-star"></i></span>
+                        <span class="text-warning"><i class="fas fa-star"></i></span>
+                        <span class="text-warning"><i class="fas fa-star"></i></span>
+                        <span class="text-warning"><i class="fas fa-star"></i></span>
+                        <span class="text-secondary"><i class="fas fa-star"></i></span>
+                    </p>
+                </div>
+
+                <!-- Review 7 -->
+                <div class="card d-flex flex-column justify-content-center align-items-center mx-auto py-3 review"
+                    id="review1">
+                    <img src="Images/review7.jpg" alt="Review Image" class="d-block w-25 h-25 mb-2 review-img">
+                    <h5 class="text-center reviewer-name">Carolin</h5>
+                    <p class="text-center review-content">
+                        I had an amazing experienc in India and I felt very confortable and well treated by all the crew.
+                    </p>
+                    <p class="text-center reviewer-ratings">
+                        <span class="text-warning"><i class="fas fa-star"></i></span>
+                        <span class="text-warning"><i class="fas fa-star"></i></span>
+                        <span class="text-warning"><i class="fas fa-star"></i></span>
+                        <span class="text-warning"><i class="fas fa-star"></i></span>
+                        <span class="text-secondary"><i class="fas fa-star"></i></span>
+                    </p>
+                </div>
+
+                <!-- Review 8 -->
+                <div class="card d-flex flex-column justify-content-center align-items-center mx-auto py-3 review"
+                    id="review1">
+                    <img src="Images/review8.jpg" alt="Review Image" class="d-block w-25 h-25 mb-2 review-img">
+                    <h5 class="text-center reviewer-name">Elizabeth</h5>
+                    <p class="text-center review-content">
+                        It was a great experience to travel with such amazing travel agency. Keep progressing...
+                    </p>
+                    <p class="text-center reviewer-ratings">
+                        <span class="text-warning"><i class="fas fa-star"></i></span>
+                        <span class="text-warning"><i class="fas fa-star"></i></span>
+                        <span class="text-warning"><i class="fas fa-star"></i></span>
+                        <span class="text-warning"><i class="fas fa-star"></i></span>
+                        <span class="text-secondary"><i class="fas fa-star"></i></span>
+                    </p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!-- Review section ends -->
+
+    <!-- Contact section starts -->
+    <section class="px-1 py-4 contact" id="contact">
+        <h2 class="text-center mb-3 contact-title">
+            <span>C</span>
+            <span>O</span>
+            <span>N</span>
+            <span>T</span>
+            <span>A</span>
+            <span>C</span>
+            <span>T</span>
+        </h2>
+        <div class="d-flex flex-column gap-2 flex-lg-row align-items-lg-center contact-container">
+            <div class="mx-auto contact-img-container">
+                <img src="Images/flightImg.jpg" alt="Contact Image" class="d-block w-100 contact-img">
+            </div>
+            <form action="https://formspree.io/f/xyyoyopy" method="post" class="px-2 contact-content-container">
+                <label for="contactName" class="mb-1 contact-label">Name</label>
+                <input type="text" name="Name" class="form-control mb-3 contactInput" id="contactName"
+                    placeholder="Your Name" required>
+                <label for="contactNumber" class="mb-1 contact-label">Mobile</label>
+                <input type="number" name="Mobile" class="form-control mb-3 contactInput" id="contactNumber"
+                    placeholder="Mobile Number" required>
+                <label for="contactEmail" class="mb-1 contact-label">Email</label>
+                <input type="email" name="Email" class="form-control mb-3 contactInput" id="contactEmail"
+                    placeholder="Your Email" required>
+                <label for="contactMsg" class="mb-1 contact-label">Message</label>
+                <textarea name="Message" id="contactMsg" class="form-control mb-3 contactInput" cols="30" rows="3"
+                    placeholder="Your Message" required></textarea>
+                <button type="submit" class="btn btn-warning form-control contactBtn">SEND</button>
+            </form>
+        </div>
+    </section>
+    <!-- Contact section ends -->
+
+    <!-- Footer starts -->
+    <footer class="bg-dark px-4 py-4 d-flex flex-column">
+        <div class="d-flex flex-wrap footer-contents-holder">
+         
+           
+
+            <!-- Footer Content 1 -->
+            <div class="footer-content footer-content-2">
+                <h4 class="text-white footer-content-title">Our Branches</h4>
+                <p class="text-white footer-content-text m-0">India</p>
+                <p class="text-white footer-content-text m-0">Brazil</p>
+                <p class="text-white footer-content-text m-0">Norway</p>
+                <p class="text-white footer-content-text m-0">Tokyo</p>
+                <p class="text-white footer-content-text m-0">USA</p>
+                <p class="text-white footer-content-text m-0 mb-3">Sydney</p>
+            </div>
+
+            <!-- Footer Content 2 -->
+            <div class="footer-content footer-content-3">
+                <h4 class="text-white footer-content-title">Follow Us</h4>
+                <div class="d-flex flex-column">
+                    <!-- Facebook -->
+                    <a href="#" class="m-0 text-white social-media" id="facebook">
+                        <i class="fab fa-facebook-f"></i>
+                        <span class="ms-1 social-media-name">Facebook</span>
+                    </a>
+
+                    <!-- Twitter -->
+                    <a href="#" class="m-0 text-white social-media" id="twitter">
+                        <i class="fab fa-twitter"></i>
+                        <span class="ms-1 social-media-name">Twitter</span>
+                    </a>
+
+                    <!-- LinkedIn -->
+                    <a href="#" class="m-0 text-white social-media" id="linkedin">
+                        <i class="fab fa-linkedin-in"></i>
+                        <span class="ms-1 social-media-name">LinkedIn</span>
+                    </a>
+
+                    <!-- Instagram -->
+                    <a href="#" class="m-0 text-white social-media" id="instagram">
+                        <i class="fab fa-instagram"></i>
+                        <span class="ms-1 social-media-name">Instagram</span>
+                    </a>
+
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer Content 4 -->
+        <div class="text-center pt-2 footer-content copyright">
+            <span class="text-white copyright-icon">&#169</span>
+            <span class="text-white">All Rights Reserved</span>
+        </div>
+
+        <!-- Scroll to Top Button -->
+        <a href="#" class="bg-warning text-dark scrollToTopBtn" id="scrollToTopBtn"><i class="fas fa-arrow-up"></i></a>
+
+    </footer>
+    <!-- Footer ends -->
+
+
+
+
+
+
+    <!-- jQuery -->
+    <script src="js/jQuery.js"></script>
+    <!-- Bootstrap JS Bundle -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <!-- Owl Carousel JS -->
+    <script src="js/owl.carousel.min.js"></script>
+
+    <!-- Owl Carousel Script -->
+    <script>
+        $(".reviews-carousel").owlCarousel({
+            responsive: {
+                0: {
+                    items: 1
+                },
+                360: {
+                    items: 1
+                },
+                576: {
+                    items: 2
+                },
+                768: {
+                    items: 2
+                },
+                992: {
+                    items: 3
+                },
+                1200: {
+                    items: 4
+                }
+            }
+        });
+    </script>
+
+    <script>
+        window.onscroll = () => gotoIconShow();
+
+        function gotoIconShow() {
+            if (window.pageYOffset < 550) {
+                document.getElementById('scrollToTopBtn').style.visibility = "hidden";
+            }
+            else {
+                document.getElementById('scrollToTopBtn').style.visibility = "visible";
+            }
+        }
+    </script>
+
+</body>
+
+</html>
